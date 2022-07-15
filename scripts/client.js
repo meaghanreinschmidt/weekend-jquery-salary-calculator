@@ -46,14 +46,16 @@ function submitEmployee() {
 }
 
 function calculateMonthlyBudget(anArray) {
-    console.log('in calculateMonthlyBudget')
+    // console.log('in calculateMonthlyBudget')
     let monthlyCost = 0;
     // loop through salaries array
     for(let i = 0; i < anArray.length; i++) {
         // for each employee, add up total of salaries
-        monthlyCost += Number(anArray[i].annualSalary / 12);
+        monthlyCost += Math.round(Number(anArray[i].annualSalary / 12));
     }
-    return monthlyCost;
+    let el = $('#total-monthly');
+    el.empty();
+    el.append(monthlyCost);
     // console.log adds annual salaries together
     // next steps: append total salaries
     // do math to make it monthly salary
