@@ -26,4 +26,6 @@ function submitEmployee() {
             <td>${employeeTitle}</td>
             <td>${annualSalary}</td>
     `)
+    // clear inputs on the page
+    $('input').val('');
 }

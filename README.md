@@ -15,8 +15,8 @@ Starting Point
 
 Base Assignment Completion
 [x] Create a click event handler for the submit button in the readyNow function
-[ ] Append the input field info onto the DOM
-[ ] Clear input fields
+[x] Append the input field info onto the DOM
+[x] Clear input fields
 [ ] Create a function to calculate the monthly cost of each employee
 [ ] Append total monthly cost onto the DOM
 [ ] Create an error message is monthly cost exceeds $20,000 (with styling)
