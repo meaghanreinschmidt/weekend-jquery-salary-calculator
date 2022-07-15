@@ -14,7 +14,7 @@ Starting Point
 [x] Create readyNow function in client.js
 
 Base Assignment Completion
-[ ] Create a click event handler for the submit button in the readyNow function
+[x] Create a click event handler for the submit button in the readyNow function
 [ ] Append the input field info onto the DOM
 [ ] Clear input fields
 [ ] Create a function to calculate the monthly cost of each employee
