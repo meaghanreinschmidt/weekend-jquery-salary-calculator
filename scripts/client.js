@@ -60,13 +60,14 @@ function calculateMonthlyBudget(anArray) {
     el.empty();
     el.append(monthlyCost);
 
+    // error if total monthly exceeds limit 
     if(monthlyCost > 20000) {
         $('#total-monthly-body').css('background-color', 'red');
     };
 };
 
 function onDelete() {
-    console.log('in onDelete');     
+    // console.log('in onDelete');     
 
     // $('td').remove(); // This gets rid of all of them
     // $('tr').remove(); // This removes table

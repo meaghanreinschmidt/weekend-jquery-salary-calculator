@@ -23,5 +23,5 @@ Base Assignment Completion
 [x] Create a delete button that removes employee from the DOM
 
 Stretch Goals
-[ ] Add styling of webpage
-[ ] Other goals listed in instructions
+[x] Add styling of webpage
+[ ] Add functionality to update monthly-cost after removing employee from table
