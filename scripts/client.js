@@ -5,6 +5,7 @@ $(readyNow);
 function readyNow() {
     console.log('ready now');
     $('#submit-employee').on('click', submitEmployee);
+    $('body').on('click', '.deleteBtn', onDelete);
 }
 
 const budget = 20000
@@ -39,6 +40,8 @@ function submitEmployee() {
             <td>${newEmployee.employeeId}</td>
             <td>${newEmployee.employeeTitle}</td>
             <td>${newEmployee.annualSalary}</td>
+            <td><button class="deleteBtn">X</button></td>
+        <tr>
     `)
     // clear inputs on the page
     $('input').val('');
@@ -60,4 +63,14 @@ function calculateMonthlyBudget(anArray) {
     if(monthlyCost > 20000) {
         $('#total-monthly-body').css('background-color', 'red');
     };
+};
+
+function onDelete() {
+    console.log('in onDelete');     
+
+    // $('td').remove(); // This gets rid of all of them
+    // $('tr').remove(); // This removes table
+    // $(this).remove(); // This gets rid of the button only
+    // $(this).parent().remove(); // This gets rid of button and background color
+    $(this).parent().parent().remove(); // This works!
 };
