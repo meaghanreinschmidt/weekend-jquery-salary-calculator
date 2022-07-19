@@ -18,8 +18,8 @@ Base Assignment Completion
 [x] Append the input field info onto the DOM
 [x] Clear input fields
 [x] Create a function to calculate the monthly cost of each employee and adds them together
-[ ] Append total monthly cost onto the DOM
-[ ] Create an error message is monthly cost exceeds $20,000 (with styling)
+[x] Append total monthly cost onto the DOM
+[ ] Create an red-background error if monthly cost exceeds $20,000
 [ ] Create a delete button that removes employee from the DOM
 
 Stretch Goals

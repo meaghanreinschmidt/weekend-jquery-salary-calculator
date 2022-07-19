@@ -42,7 +42,7 @@ function submitEmployee() {
     `)
     // clear inputs on the page
     $('input').val('');
-    console.log(calculateMonthlyBudget(employees));
+    calculateMonthlyBudget(employees);
 }
 
 function calculateMonthlyBudget(anArray) {
@@ -56,7 +56,8 @@ function calculateMonthlyBudget(anArray) {
     let el = $('#total-monthly');
     el.empty();
     el.append(monthlyCost);
-    // console.log adds annual salaries together
-    // next steps: append total salaries
-    // do math to make it monthly salary
-}
+
+    if(monthlyCost > 20000) {
+        $('#total-monthly-body').css('background-color', 'red');
+    };
+};
