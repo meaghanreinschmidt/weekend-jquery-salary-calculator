@@ -8,6 +8,8 @@ This project allows you to input your employees from your company and display th
 
 ## Screenshot 
 
+<img width="1064" alt="Screen Shot 2022-08-08 at 8 20 04 PM" src="https://user-images.githubusercontent.com/98852538/183542006-cbc48a09-0ab6-4ae6-bba3-421a84ee8bdd.png">
+
 ## Usage
 
 1. As a user, I want to be able to enter an employee name, ID, title, and salary into the input fields. 
