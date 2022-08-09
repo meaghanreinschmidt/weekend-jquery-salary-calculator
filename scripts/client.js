@@ -49,13 +49,22 @@ function submitEmployee() {
 }
 
 function calculateMonthlyBudget(anArray) {
-    // console.log('in calculateMonthlyBudget')
+    // // console.log('in calculateMonthlyBudget')
+    // let monthlyCost = 0;
+    // // loop through salaries array
+    // for(let i = 0; i < anArray.length; i++) {
+    //     // for each employee, add up total of salaries
+    //     monthlyCost += Math.round(Number(anArray[i].annualSalary / 12));
+    // }
+    // BE CAREFUL WITH ROUND FUNCTION
+    let annualCost = 0;
     let monthlyCost = 0;
-    // loop through salaries array
+
     for(let i = 0; i < anArray.length; i++) {
-        // for each employee, add up total of salaries
-        monthlyCost += Math.round(Number(anArray[i].annualSalary / 12));
-    }
+        annualCost += Number(anArray[i].annualSalary);
+    };
+    monthlyCost = Math.round(annualCost/12);
+    
     let el = $('#total-monthly');
     el.empty();
     el.append(monthlyCost);
